@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ 'Pizza SoulCode' | uppercase }}</mat-card-title>
+    <mat-card-subtitle>{{ 'Pizza para os programadores' | lowercase }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+  src="https://fastly.4sqi.net/img/general/width960/14506976_OzIlMVakUeoIZwLjp6zEMddd9vdRCu1ucmwHCnI8li8.jpg"
+  alt="Fatia de pizza"
+  mat-card-image
+>
+<mat-card-content>
+  <!-- <div>
+    {{ alimentos | json }}
+  </div> -->
+  <p>
+    Item postado no dia {{ data | date:'dd/MM/yyyy' }}
+  </p>
+</mat-card-content>
+<mat-card-footer>
+  <p>
+    <strong>{{ 59 | currency: 'BRL' }}</strong>
+  </p>
+  <button>Comprar</button>
+</mat-card-footer>
+</mat-card>
+
+
